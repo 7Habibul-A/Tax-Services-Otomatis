@@ -42,6 +42,10 @@
       margin-top: 1rem;
       font-size: 0.9rem;
     }
+    label::after {
+      content: ":";
+      margin-left: 4px;
+    }
     input {
       width: 100%;
       padding: 0.5rem;
@@ -77,19 +81,19 @@
       <img src="https://img.icons8.com/color/96/calculator.png" alt="Calculator Icon"/>
     </div>
     <h2>Tax & Service Calculator</h2>
-    <label>Subtotal :</label>
+    <label>Subtotal</label>
     <input type="number" id="subtotal" placeholder="e.g. 100000">
 
-    <label>Discount:</label>
+    <label>Discount</label>
     <input type="number" id="discount" placeholder="e.g. 5000">
 
-    <label>Service Charge %:</label>
+    <label>Service Charge %</label>
     <input type="number" id="service" placeholder="e.g. 5.5">
 
-    <label>Tax %:</label>
+    <label>Tax %</label>
     <input type="number" id="tax" placeholder="e.g. 10">
 
-    <label>Rounding:</label>
+    <label>Rounding</label>
     <input type="number" id="rounding" placeholder="e.g. 0">
 
     <div class="result" id="output">
